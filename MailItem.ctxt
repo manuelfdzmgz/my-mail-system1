@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=newFrom\ newTo\ newMessage
+comment0.target=MailItem(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Constructor\ of\ main\ Class\ MailItem\ \ create\ objets\ of\ MailItem\ inicializing\ his\ atributes\ \ into\ a\ parameter\r\n
+comment1.params=
+comment1.target=java.lang.String\ getClient1()
+comment2.params=
+comment2.target=java.lang.String\ getClient2()
+comment3.params=
+comment3.target=java.lang.String\ getMessage()
+comment4.params=
+comment4.target=void\ print()
+numComments=5
