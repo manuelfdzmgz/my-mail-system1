@@ -29,9 +29,9 @@ public class MailClient
            email.print();         
         }   
     }
-    public void sendMailItem(String adressed, String message)
+    public void sendMailItem(String adressed, String message, String subject)
     {
-        MailItem item = new MailItem(user, adressed, message);
+        MailItem item = new MailItem(user, adressed, message, subject);
         server.post(item);
     }
 }
