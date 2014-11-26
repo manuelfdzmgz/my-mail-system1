@@ -13,11 +13,11 @@ public class MailItem
     /**
      * Constructor of main Class MailItem  create objets of MailItem inicializing his atributes  into a parameter
      */
-    public MailItem(String newFrom, String newTo, String newMessage)
+    public MailItem(String from, String to, String message)
     {
-        from = newFrom ;
-        to = newTo;
-        message = newMessage;
+        this.from = from ;
+        this.to = to;
+        this.message = message;
     }
     public String getClient1()
     {

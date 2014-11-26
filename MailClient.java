@@ -8,25 +8,25 @@ public class MailClient
     private MailServer server;
     //email user that use the client
     private String user;
-    public MailClient(String newUser,MailServer newServer)
+    public MailClient(String user,MailServer server)
     {
-        server = newServer;
-        user = newUser;
+        this.server = server;
+        this.user = user;
     }
-    public String getNextMailItem()
+    public  MailItem getNextMailItem()
     {
         return server.getNextMailItem(user);
     }
     public void printNextMailItem()
     {
-        MailItem= server.getNextMailItem(user);
-        if (item == null)
+        MailItem email = server.getNextMailItem(user);
+        if (email == null)
         {
             System.out.println("Dont have an email");
         }
         else
-         {
-           item.print();         
+        {
+           email.print();         
         }   
     }
     public void sendMailItem(String adressed, String message)
