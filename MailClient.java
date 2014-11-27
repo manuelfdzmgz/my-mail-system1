@@ -12,6 +12,8 @@ public class MailClient
     {
         this.server = server;
         this.user = user;
+        
+
     }
     public  MailItem getNextMailItem()
     {
@@ -34,4 +36,5 @@ public class MailClient
         MailItem item = new MailItem(user, adressed, message, subject);
         server.post(item);
     }
+   
 }

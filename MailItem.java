@@ -33,6 +33,10 @@ public class MailItem
     {
         return message;
     }
+    public String getTo()
+    {
+        return to;
+    }
     public void print()
     {
         System.out.println("FROM"+"####"+ from);
