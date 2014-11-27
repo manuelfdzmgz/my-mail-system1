@@ -21,21 +21,23 @@ public class MailItem
         this.message = message;
         this.subject=subject;
     }
-    public String getClient1()
+    public String getFrom()
     {
         return from;
     }
-     public String getClient2()
+     public String getTo()
     {
         return to;
     }
-     public String getMessage()
+
+    public String getSubject()
+    {
+        return subject;
+    }
+    public String getMessage()
     {
         return message;
-    }
-    public String getTo()
-    {
-        return to;
+
     }
     public void print()
     {

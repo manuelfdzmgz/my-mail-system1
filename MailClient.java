@@ -12,13 +12,13 @@ public class MailClient
     {
         this.server = server;
         this.user = user;
-        
 
     }
     public  MailItem getNextMailItem()
     {
         return server.getNextMailItem(user);
     }
+
     public void printNextMailItem()
     {
         MailItem email = server.getNextMailItem(user);
@@ -28,13 +28,22 @@ public class MailClient
         }
         else
         {
-           email.print();         
+            email.print();         
         }   
     }
+
     public void sendMailItem(String adressed, String message, String subject)
     {
         MailItem item = new MailItem(user, adressed, message, subject);
         server.post(item);
     }
-   
+
+    public void getNextMailItemAndAutorespond()
+    {   MailItem email = server.getNextMailItem(user);
+        String subject =  "RE: " + email.getSubject();
+        String message = "Estoy de vacaciones " +" " + email.getMessage();
+        String from = email.getFrom();
+        sendMailItem(from,subject, message);
+        
+    }
 }
