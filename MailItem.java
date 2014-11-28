@@ -11,6 +11,7 @@ public class MailItem
     private String to;
     private String message;
     private String subject;
+    private String lastMessage;
     /**
      * Constructor of main Class MailItem  create objets of MailItem inicializing his atributes  into a parameter
      */
@@ -20,6 +21,7 @@ public class MailItem
         this.to = to;
         this.message = message;
         this.subject=subject;
+        
     }
     public String getFrom()
     {
